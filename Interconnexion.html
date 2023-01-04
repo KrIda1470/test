@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1 style="background-color: blue; padding: 10px;"> examen</h1>
+    <div style="background-color: green; padding: 25px;">
+    <meta charset="UTF-8">
+    <title>examen </title>
+    <link href="bootstrap/css/bootstrap.min.css"  rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<SCRIPT LANGUAGE="JavaScript">
+		function Login(){
+		var done=0;
+		var username=document.login.username.value;
+		var password=document.login.password.value;
+		if (username=="vous" && password=="vous") { 
+		// Vous pouvez réservez une page pour vous même(options, etc.)
+		window.location="vous.html";
+		}
+		}                     
+
+		function valider (event) {
+      // code a exécuter lorsque le formulaire sera validé
+	  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8"); 
+      xhr.send("nom=" + nom + "&email=" + email + "&pass=" + pass + "");
+     }
+		</SCRIPT>	
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<h1 class="bg-primary">Chat ESSAT V1.0</h1>
+	</div>
+	<div class="row">
+        <div class="col-lg-3">
+			<div class="card bg-light">
+			<div class="card-body">
+				<form  action="connect.html" method="get" name="login">
+					<h3 >Connexions</h3>
+					<br>
+					<div class="form-group">
+						<input type="text" class="form-control" name="username" placeholder="Votre email" >
+					 </div>
+					<br>
+					 <div class="form-group">
+						<input type="password" class="form-control" name="password" placeholder="Votre Password">
+					 </div>
+					 <br>
+					 <div class="form-group">
+						<input type="submit" value="Connexion " name="submit" class="form-control bg-primary" onclick="Login();">
+					 </div>
+				</form>
+			</div>
+		    </div>
+		</div>
+
+        <div class="col-lg-9">
+		
+				<form  action="" method="get" name="login">
+					<div class="row ">
+					 <div class=" col-lg-9">
+						<input type="text" class="form-control" name="Votre message" placeholder="Votre Message" >
+					 </div>
+					 <div class=" col-lg-3 ">
+						<input type="submit" value="Envoi Message " name="submit" class="form-control bg-warning ">
+					 </div>
+					</div>
+                </form>
+			
+		</div>
+	</div><br>
+	<div class="row">
+        <div class="col-lg-3">
+			<div class="card bg-light">
+			<div class="card-body">
+				<form  action="#" method="get" name="login"  id="inscription">
+					<h3 >Incriptions</h3>
+					<br>
+					<div class="form-group">
+						<input type="text" class="form-control" name="nom" placeholder="Votre Nom">
+					 </div>
+					<br>
+					 <div class="form-group">
+						<input type="text" class="form-control" name="mail" placeholder="Votre Mail">
+					 </div>
+					 <br>
+					 <div class="form-group">
+						<input type="text" class="form-control" name="pass" placeholder="Votre Password">
+					 </div>
+					 <br>
+					 <div class="form-group">
+						<input type="submit" value="Incriptions " name="submit" class="form-control bg-primary" onclick="valider();">
+					 </div>
+				</form>
+			</div>
+		    </div>
+		</div>
+
+		
+	</div>
+</div>
+</body>
+</html>
